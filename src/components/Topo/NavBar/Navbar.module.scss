@@ -1,0 +1,72 @@
+.navbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 35%;
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Metal Mania";
+    align-items: flex-start;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    flex-shrink: 1;
+    a{
+        color: unset;
+    }
+    li {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+        align-self: baseline;
+        text-shadow: 3px -3px 15px black;
+        &:hover {
+            color:  lavender
+        } 
+        a {
+            text-decoration: none;
+            &:hover {
+                color:  lavender
+            } 
+        }
+    } 
+}
+//----------------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 30vh;
+        list-style: none;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Metal Mania";
+        align-items: flex-start;
+        margin-top: 0vh;
+        margin-left: 0vw;
+        overflow-y: hidden;
+        color: #2a1310;
+        a{
+            color: unset;
+        }    
+        li {
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: center;
+            align-self: baseline;
+            text-shadow: 3px -3px 15px white;   
+            &:hover {
+                color:  lavender
+            } 
+            a {
+                text-decoration: none;
+            }
+        } 
+        
+    }
+    
+}

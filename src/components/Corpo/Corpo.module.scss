@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "DharmaPunk2";   /*Can be any text*/
+    src: local("DharmaPunk2"),
+      url("../../assets/fonts/DharmaPunk2.ttf") format("truetype");
+  }  
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.textosLaterais{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    box-sizing: border-box;
+    display: block;
+    width: 48vw;
+    height: 85vh;
+    background-color: white;
+    opacity: 0.8;
+    text-justify: auto;
+    text-align: justify;
+    overflow-y:hidden;
+    
+    h1{ 
+        padding: 0;
+        margin: 0;
+        font-size: 4rem;
+        text-align: center;
+        //font-family: "DharmaPunk2";
+        font-family: "Metal Mania";
+      
+    }
+    p{  
+        font-size: 1.17rem;
+        font-family: "Metal Mania";
+    }
+    
+    img{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+//-------------------------------------------------------------------------------------
+
+@media screen and (max-width: 600px) {
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: unset;
+        align-items: unset;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .textosLaterais{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+        display: block;
+        width: 100vw;
+        height: 85vh;
+        background-color: white;
+        opacity: 0.8;
+        text-justify: auto;
+        text-align: justify;
+        overflow-y:hidden;
+        
+        h1{ 
+            padding: 0;
+            margin: 0;
+            font-size: 4rem;
+            text-align: center;
+            //font-family: "DharmaPunk2";
+            font-family: "Metal Mania";
+          
+        }
+        p{  
+            font-size: 1.17rem;
+            font-family: "Metal Mania";
+        }
+        
+        img{
+            width: 100%;
+            height: 50%;
+        }
+    }
+}

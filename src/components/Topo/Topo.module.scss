@@ -1,0 +1,43 @@
+.topo{
+    height: 45vh;
+    width: 98.3vw;
+    background-color: white;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    flex-shrink: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .topo{
+        position:fixed;
+        width: 100vw;
+        z-index: 1;
+        height:15vh;
+        transition: 0.5s height;
+        background-color: rgba(0, 0, 0,0.6);
+        opacity: 0.95;
+        display: block;
+        top: 0;
+        overflow-y: hidden;
+        flex-direction:unset;
+        flex-shrink:unset;
+       
+    }
+    .topoCompleto{
+        position:fixed;
+        z-index: 1;
+        width: 100vw;
+        height:45vh;
+        transition: 0.5s height;
+        background-color: rgba(0, 0, 0,0.6);
+        opacity: 0.95;
+        display: block;
+        top: 0;
+        overflow-y: hidden;
+        flex-direction:unset;
+        flex-shrink:unset;
+       
+    }
+}

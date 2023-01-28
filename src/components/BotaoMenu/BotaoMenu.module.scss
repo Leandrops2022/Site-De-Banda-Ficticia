@@ -1,0 +1,17 @@
+.botao{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .botao{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        height: fit-content;
+        align-self: flex-end;
+        margin-left: auto;
+        padding-bottom: 1vh;
+        width: 15vw;
+    }
+}
+
