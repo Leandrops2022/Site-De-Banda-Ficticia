@@ -1,10 +1,10 @@
+import 'normalize.css';
 import style from './App.module.scss';
 import Topo from '../components/Topo';
 import Corpo from '../components/Corpo';
-import "@fontsource/metal-mania";
-import Rodape from '../components/Rodape';
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import '@fontsource/metal-mania';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 import estiloTopo from '../components/Topo/Topo.module.scss';
 
@@ -16,11 +16,11 @@ function App() {
 
   useEffect(()=>{
     if(ativado){
-      setClasse(estiloTopo.topoCompleto)
+      setClasse(estiloTopo.topoCompleto);
     }else {
-      setClasse(estiloTopo.topo)
+      setClasse(estiloTopo.topo);
     }
-  },[ativado])
+  },[ativado]);
 
   return (
     <div className={style.App}>
@@ -30,7 +30,6 @@ function App() {
         classe={classe}
       />
       <Corpo />
-      <Rodape />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import Banner from './Banner';
 import NavBar from './NavBar';
-import style from './Topo.module.scss';
 
 interface Props{
     ativado?:boolean | undefined,
@@ -10,13 +9,13 @@ interface Props{
 
 export default function Topo ({ativado, setAtivado, classe}: Props) {
     
-    return (
-        <header className={classe}>
-            <Banner 
-                ativado={ativado}
-                setAtivado={setAtivado}
-            />
-            <NavBar />
-        </header>
-    )
+  return (
+    <header className={classe}>
+      <Banner 
+        ativado={ativado}
+        setAtivado={setAtivado}
+      />
+      <NavBar />
+    </header>
+  );
 }

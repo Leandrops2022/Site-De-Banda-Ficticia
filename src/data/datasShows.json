@@ -1,0 +1,42 @@
+[
+  {
+    "data":"15 de março",
+    "cidade":"São Paulo, SP"
+  },
+  {
+    "data":"19 de março",
+    "cidade":"Rio de Janeiro, RJ"
+  },
+  {
+    "data":"22 de março",
+    "cidade":"Belo Horizonte, MG"
+  },
+  {
+    "data":"26 de março",
+    "cidade":"Porto Alegre, RS"
+  },
+  {
+    "data":"29 de março",
+    "cidade":"Curitiba, PR"
+  },
+  {
+    "data":"2 de abril",
+    "cidade":"Salvador, BA"
+  },
+  {
+    "data":"6 de abril",
+    "cidade":"Recife, PE"
+  },
+  {
+    "data":"9 de abril",
+    "cidade":"Fortaleza, CE"
+  },
+  {
+    "data":"13 de abril",
+    "cidade":"Brasília, DF"
+  },
+  {
+    "data":"16 de abril",
+    "cidade":"Goiânia, GO"
+  }
+]

@@ -1,27 +1,19 @@
 import style from './Corpo.module.scss';
-import '../../assets/fonts/DharmaPunk2.ttf';
-import img1 from '../../assets/imgs/banda.png';
-import img2 from '../../assets/imgs/banda5.png';
+import {Outlet} from 'react-router-dom';
 
-export default function Corpo(){
-    return (
-        <main className={style.principal}>
-            <div className={style.textosLaterais}>
-                <h1>Lorem ipsum</h1>
-                <img src={img1} alt="" />
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi 
-                    totam impedit sapiente suscipit mollitia, excepturi dignissimos quasi expedita fugiat quis
-                    quam voluptas tempora, natus nulla tenetur! Soluta, libero.
-                </p> 
-            </div>
-            <div className={style.textosLaterais}>
-                <h1>Lorem dolor</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi 
-                    totam impedit sapiente suscipit mollitia, excepturi dignissimos quasi expedita fugiat quis
-                    quam voluptas tempora, natus nulla tenetur! Soluta, libero.
-                </p>
-                <img src={img2} alt="" />
-            </div>
-        </main>
-    )
+export default function Corpo() {
+  return (
+    <div className={style.principal}>
+      <div className={style.container}>
+        <div className={style.content_wrapper}>
+          <Outlet />
+        </div>
+        <footer className={style.rodape}>
+          <p className={style.textoCentro}> 2023, desenvolvido por Leandro Soares<br />
+            <span>Ashes of Lorem é o nome de uma banda ficticia e qualquer semelhança com nomes de bandas reais é pura coincidência</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  );
 }

@@ -1,0 +1,19 @@
+.datas{
+    background-color: rgba(0, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Metal mania';
+    font-size: 32px;
+    text-align: justify;
+    h1 {
+        font-size: 40px;
+    }
+    ul {
+        list-style: none;
+    }
+}

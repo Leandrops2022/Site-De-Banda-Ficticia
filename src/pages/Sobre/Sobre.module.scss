@@ -1,0 +1,15 @@
+.sobre {
+    font-family:'Metal mania';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgba(192, 192, 192, 0.7);
+    width: 100vw;
+    padding: 1rem 10rem 5rem 10rem;
+    box-sizing: border-box;
+    text-align: justify;
+    h1 {
+        text-align: center;
+    }
+}
