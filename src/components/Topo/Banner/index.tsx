@@ -5,19 +5,24 @@ import Iprops from '../../../types/Iprops';
 export default function Banner({ ativado, setAtivado }: Iprops) {
 
   function ativaMenu() {
-    if(setAtivado && window.innerWidth <= 600) {
-      setAtivado(!ativado);
-    } else if (setAtivado){
-      setAtivado(false);
+    const condicoes = (setAtivado && window.innerWidth <= 900);
+    if(setAtivado){
+      condicoes? setAtivado(!ativado) : setAtivado(false);
     }
   }
+  
   return (
     <div className={style.banner}>
-      <h3 className={style.data1}>20/02</h3>
-      <h1>Ashes of Lorem</h1>
-      <h3 className={style.data2}>30/02</h3>
+      <div className={style.datas}>
+        <h3>20/02</h3>
+      </div>
+      <div className={style.datas}>
+        <h3>30/02</h3>
+      </div>
+      
       <BotaoMenu
         onClick={ativaMenu}
+        onBlur={ativaMenu}
       />
     </div>
   );

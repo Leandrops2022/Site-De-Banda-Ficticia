@@ -1,19 +1,36 @@
+@import 'styles/variaveis';
+
 .datas{
-    background-color: rgba(0, 255, 255, 0.5);
-    width: 100vw;
+    background-color:$corBackground1;
+    width: 99.8vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
-    font-family: 'Metal mania';
+    align-items:center;
+    font-family: $fontePadrao;
     font-size: 32px;
     text-align: justify;
     h1 {
-        font-size: 40px;
+        font-size: $h1;
     }
     ul {
         list-style: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .datas {
+        font-size: 25px;
+        padding: 5rem 2rem 1rem 1rem;
+        justify-content: flex-start;
+        h1 {
+            font-size: $h1Responsivo;
+        }
+        ul {
+            li{
+                line-height: 50px;
+            }
+        }
     }
 }

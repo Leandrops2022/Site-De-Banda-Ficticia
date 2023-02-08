@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-family: "Metal Mania";
     align-items:center;
+    justify-content:space-between;
 
     h1{
         font-size: 4rem;
@@ -22,15 +23,15 @@
     h3{
         size: 5rem;
     }
-    .data1{
-        margin-left: 5vw;
+    .datas{
+        box-sizing: border-box;
+        padding: 2%;
+        margin-left: 0%;
     }
-    .data2{
-        margin-left: 80vw;
-    }
+    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .banner{
         padding: 0;
         margin: 0;
@@ -38,23 +39,19 @@
         color:white;
         display: flex;
         height: 15vh;
-        grid-template-columns: 1fr;
         box-sizing: border-box;
         font-family: "Metal Mania";
-        align-items: unset;
+        align-items:flex-end;
         h1{
             font-size: 2rem;
         }
         h3{
             font-size: 1rem;
         }
-        .data1{
-            margin-left: 25vw;
+        .datas{
+            margin-left: 25%;
             align-self: flex-end;
         }
-        .data2{
-            margin-left: 25vw;
-            align-self: flex-end;
-        }
+        
     }
 }

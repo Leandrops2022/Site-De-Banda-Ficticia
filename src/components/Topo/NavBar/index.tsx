@@ -20,6 +20,10 @@ export default function NavBar() {
       to: 'datas'
     },
     {
+      label: 'Galeria',
+      to: 'galeria'
+    },
+    {
       label: 'Sobre',
       to: 'sobre'
     }

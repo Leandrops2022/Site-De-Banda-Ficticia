@@ -1,0 +1,30 @@
+@import 'styles/templateTextos';
+.datas{
+    margin-top: 15px;
+    box-shadow: azure -2px -8px 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-self: center;
+    background-color: rgba(42, 19, 16, 0.2);
+    min-height: 20vh;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    ul{
+        list-style: none;
+        li{
+            padding: 1rem;
+            &:hover{
+                cursor: pointer;
+                color: azure;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .datas {
+        width:90vw;
+    }
+}

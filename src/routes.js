@@ -9,6 +9,9 @@ import Corpo from 'components/Corpo';
 import Home from 'pages/Home';
 import Sobre from 'pages/Sobre';
 import Datas from 'pages/Datas';
+import Contato from 'pages/Contato';
+import Turnes from 'pages/Turnes';
+import Galeria from 'pages/Galeria';
 
 library.add(faBars);
 
@@ -34,10 +37,13 @@ export default function AppRouter() {
           classe={classe}
         />
         <Routes>
-          <Route path={'/'} element={<Corpo />}>
+          <Route path={'/'} element={<Corpo  setAtivado={setAtivado} />}>
             <Route index element={<Home />} />
-            <Route path={'sobre'} element={<Sobre />} />
+            <Route path={'contato'} element={<Contato />} />
+            <Route path={'turnes'} element={<Turnes />} />
             <Route path={'datas'} element={<Datas />} />
+            <Route path={'galeria'} element={<Galeria />} />
+            <Route path={'sobre'} element={<Sobre />} />
           </Route>
         </Routes>
       </Router>

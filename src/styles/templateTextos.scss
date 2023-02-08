@@ -1,0 +1,26 @@
+@import './variaveis';
+.padrao {
+    font-family: $fontePadrao;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: $corBackground1;
+    min-height: 100vh;
+    height: fit-content;
+    width: 100vw;
+    padding: 1rem 10rem 5rem 10rem;
+    box-sizing: border-box;
+    text-align: justify;
+    h1 {
+        text-align: center;
+    }
+    p{
+        text-indent: 2rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .padrao {
+        padding: 2rem;
+    }
+}

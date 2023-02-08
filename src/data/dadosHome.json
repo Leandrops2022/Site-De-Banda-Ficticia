@@ -1,35 +1,48 @@
 [
     {   
         "id": 1,
-        "titulo": "Lorem ipsum",
-        "imagem": "assets/imgs/banda.png",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi totam impedit sapiente suscipit mollitia, excepturi."
-    },
-    {   "id": 2,
-        "titulo": "Lorem dolor",
+        "titulo": "Rise of the Warriors\n(2021)",
         "imagem": "assets/imgs/banda1.jpg",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi totam impedit sapiente suscipit mollitia, excepturi."        
+        "texto": "Rise of the Warriors é o mais recente álbum da banda, trazendo uma mistura potente de riffs pesados e vocais intensos. Com temas centrados em guerra e luta, cada música é uma ode à força e coragem dos guerreiros. Uma jornada épica que irá deixar o ouvinte inspirado"
+    },
+    {   "id": 2,
+        "titulo": "The Darkest Hour\n(2019)",
+        "imagem": "assets/imgs/banda.png",
+        "texto": "The Darkest Hour explora as profundezas da escuridão e da tristeza. Com composições intensas e emotivas, cada música conduz o ouvinte por uma jornada através das sombras da vida. Este álbum é uma poderosa reflexão sobre o lado sombrio da humanidade e da existência."        
     },
     {   
-        "id": 1,
-        "titulo": "Lorem Distinctio",
+        "id": 3,
+        "titulo": "Reign of Steel\n(2017)",
         "imagem": "assets/imgs/banda2.png",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi totam impedit sapiente suscipit mollitia, excepturi."
+        "texto": "Reign of Steel celebra a força e a determinação da humanidade. Com uma combinação de guitarras pesadas, baterias potentes e vocais enérgicos, cada música é uma ode à perseverança e à vontade de vencer. Este é um álbum poderoso que eleva a alma e inspira o ouvinte a nunca desistir."
     },
-    {   "id": 2,
-        "titulo": "Lorem maxime",
+    {   "id": 4,
+        "titulo": "Echoes of War\n(2015)",
         "imagem": "assets/imgs/banda3.png",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi totam impedit sapiente suscipit mollitia, excepturi."        
+        "texto": "Este álbum retrata a brutalidade e o horror da guerra através de músicas pesadas e intensas. Com letras inspiradas em eventos históricos e conflitos contemporâneos, Echoes of War é uma reflexão sombria sobre o preço da paz."        
     },
     {   
-        "id": 1,
-        "titulo": "Lorem officia",
+        "id": 5,
+        "titulo": "Chaos Reigns\n(2011)",
         "imagem": "assets/imgs/banda4.png",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi totam impedit sapiente suscipit mollitia, excepturi."
+        "texto": "Chaos Reigns é um álbum que explora o caos e a incerteza que permeiam o mundo moderno. Com riffs pesados e vocais intensos, este álbum é uma jornada épica pelos labirintos da loucura e da insanidade da sociedade."
     },
-    {   "id": 2,
-        "titulo": "Lorem amet",
+    {   "id": 6,
+        "titulo": "Symphony of Destruction\n(2006)",
         "imagem": "assets/imgs/banda5.png",
-        "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio maxime officia commodi totam impedit sapiente suscipit mollitia, excepturi."        
+        "texto": "retrata a destruição como um caminho para a transformação. Este é um álbum inspirador que convida o ouvinte a enfrentar os desafios da vida com coragem e determinação."        
+    },
+    {
+        "id": 7,
+        "titulo": "Wrath of the Titans\n(2006)",
+        "imagem":"assets/imgs/banda6.png",
+        "texto":"Este álbum retrata a fúria dos deuses antigos e a força de sua ira. Com músicas intensas e épicas, Wrath of the Titans é uma jornada pelo universo mitológico, onde a guerra entre os deuses é narrada através da música."
+    },
+    {
+        "id": 8,
+        "titulo":"The Rise of Empires\n(2001)",
+        "imagem":"assets/imgs/imgGuitarra.jpg",
+        "texto":"Este álbum celebra a ascensão e o poder dos grandes impérios da história. Com composições épicas e riffs pesados, The Rise of Empires retrata a jornada de conquista e dominação, celebrando a força e a determinação dos imperadores."
     }
+
 ]

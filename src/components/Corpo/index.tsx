@@ -1,11 +1,20 @@
 import style from './Corpo.module.scss';
 import {Outlet} from 'react-router-dom';
 
-export default function Corpo() {
+interface Props {
+  setAtivado?: React.Dispatch<React.SetStateAction<boolean>> | undefined
+  }
+
+export default function Corpo({ setAtivado }: Props) {
+  function fechaMenuEmScrollEvent() {
+    if(setAtivado){
+      setAtivado(false);
+    }
+  }
   return (
     <div className={style.principal}>
       <div className={style.container}>
-        <div className={style.content_wrapper}>
+        <div className={style.content_wrapper} onTouchMove={fechaMenuEmScrollEvent}>
           <Outlet />
         </div>
         <footer className={style.rodape}>

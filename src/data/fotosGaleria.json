@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "galeria1" ,
+    "url": "/assets/imgs/galeria1.jpg"
+  },
+  {
+    "nome": "galeria2",
+    "url": "/assets/imgs/galeria2.jpg"
+  },
+  {
+    "nome": "galeria3",
+    "url": "/assets/imgs/galeria3.jpg"
+  },
+  {
+    "nome": "galeria4",
+    "url": "/assets/imgs/galeria4.jpg"
+  },
+  {
+    "nome": "galeria5",
+    "url": "/assets/imgs/galeria5.jpg"
+  },
+  {
+    "nome": "galeria6",
+    "url": "/assets/imgs/galeria6.jpg"
+  },
+  {
+    "nome": "galeria7",
+    "url": "/assets/imgs/galeria7.jpg"
+  },
+  {
+    "nome": "galeria8",
+    "url": "/assets/imgs/galeria8.jpg"
+  }
+]

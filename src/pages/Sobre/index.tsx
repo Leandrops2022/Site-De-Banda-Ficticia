@@ -1,8 +1,9 @@
 import styles from './Sobre.module.scss';
 
 export default function Sobre() {
+  
   return (
-    <div className={styles.sobre}>
+    <div className={styles.padrao}>
       <h1>A história por trás da lendária Banda de Heavy Metal<br /> Ashes of Lorem</h1>
       <p>
         A Banda de Heavy Metal Ashes of Lorem surgiu em 1995, na cidade de São Paulo. Desde então, tem se
@@ -31,7 +32,7 @@ export default function Sobre() {
         constantemente, incorporando novos elementos ao seu som e explorando novos horizontes musicais.
       </p>
       <p>
-        A discografia da Ashes of Lorem é composta por oito álbuns de estúdio, além de vários EPs e DVD ao vivo.
+        A discografia da Ashes of Lorem é composta por oito álbuns de estúdio, além de vários EPs e DVDs ao vivo.
          Cada álbum apresenta uma sonoridade única, mas sempre mantendo a identidade pesada e intensa que é a 
          marca registrada da banda. Os álbuns mais recentes da Ashes of Lorem incluem &apos;Reign of 
          Steel&apos;(2017), &apos;The Darkest Hour&apos; (2019) e &apos;Rise of the Warriors&apos; (2021), 
