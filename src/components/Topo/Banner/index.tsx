@@ -1,29 +1,26 @@
-import BotaoMenu from '../../BotaoMenu';
 import style from './Banner.module.scss';
-import Iprops from '../../../types/Iprops';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { mudarAtivado } from 'store/reducers/ativado';
+import { useDispatch } from 'react-redux';
 
-export default function Banner({ ativado, setAtivado }: Iprops) {
-
-  function ativaMenu() {
-    const condicoes = (setAtivado && window.innerWidth <= 900);
-    if(setAtivado){
-      condicoes? setAtivado(!ativado) : setAtivado(false);
-    }
-  }
-  
+export default function Banner() {
+  const dispatch = useDispatch();
   return (
     <div className={style.banner}>
       <div className={style.datas}>
-        <h3>20/02</h3>
+        <h3>20/12</h3>
       </div>
       <div className={style.datas}>
-        <h3>30/02</h3>
+        <h3>30/12</h3>
       </div>
-      
-      <BotaoMenu
-        onClick={ativaMenu}
-        onBlur={ativaMenu}
-      />
+      <button
+        className={style.botao}
+        onClick={() => {
+          dispatch(mudarAtivado());
+        }}
+      >
+        <FontAwesomeIcon icon="bars" color="white" size="2x" />
+      </button>
     </div>
   );
 }

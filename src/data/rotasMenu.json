@@ -1,0 +1,26 @@
+[
+    {
+        "label": "Home",
+        "to": "/"
+    },
+    {
+        "label": "Contato",
+        "to": "contato"
+    },
+    {
+        "label": "Turnês",
+        "to": "turnes"
+    },
+    {
+        "label": "Datas",
+        "to": "datas"
+    },
+    {
+        "label": "Galeria",
+        "to": "galeria"
+    },
+    {
+        "label": "Sobre",
+        "to": "sobre"
+    }
+]

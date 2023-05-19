@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {useEffect, useState} from 'react';
 import Topo from 'components/Topo';
-import estiloTopo from 'components/Topo/Topo.module.scss';
 import '@fontsource/metal-mania';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,32 +10,17 @@ import Datas from 'pages/Datas';
 import Contato from 'pages/Contato';
 import Turnes from 'pages/Turnes';
 import Galeria from 'pages/Galeria';
+import Footer from 'components/Footer';
 
 library.add(faBars);
 
 export default function AppRouter() {
-  const [ativado, setAtivado] = useState(false);
-  const [classe, setClasse] = useState(estiloTopo.topo);
-
-
-  useEffect(()=>{
-    if(ativado){
-      setClasse(estiloTopo.topoCompleto);
-    }else {
-      setClasse(estiloTopo.topo);
-    }
-  },[ativado]);
-
   return (
     <main>
       <Router>
-        <Topo 
-          ativado={ativado}
-          setAtivado={setAtivado}
-          classe={classe}
-        />
+        <Topo />
         <Routes>
-          <Route path={'/'} element={<Corpo  setAtivado={setAtivado} />}>
+          <Route path={'/'} element={<Corpo />}>
             <Route index element={<Home />} />
             <Route path={'contato'} element={<Contato />} />
             <Route path={'turnes'} element={<Turnes />} />
@@ -46,6 +29,7 @@ export default function AppRouter() {
             <Route path={'sobre'} element={<Sobre />} />
           </Route>
         </Routes>
+        <Footer />
       </Router>
     </main>
   );

@@ -1,20 +1,19 @@
 import Banner from './Banner';
 import NavBar from './NavBar';
+import styles from './Topo.module.scss';
+import { useSelector } from 'react-redux';
+import { IAtivado } from 'interfaces/IAtivado';
 
-interface Props{
-    ativado?:boolean | undefined,
-    setAtivado?: React.Dispatch<React.SetStateAction<boolean>> | undefined,
-    classe?:string
-}
 
-export default function Topo ({ativado, setAtivado, classe}: Props) {
-    
+export default function Topo() {
+  const ativado = useSelector((state: IAtivado) => state.ativado.estado);
+
   return (
-    <header className={classe}>
-      <Banner 
-        ativado={ativado}
-        setAtivado={setAtivado}
-      />
+    <header className={ativado
+      ? styles['topo-completo']
+      : styles.topo}
+    >
+      <Banner />
       <NavBar />
     </header>
   );

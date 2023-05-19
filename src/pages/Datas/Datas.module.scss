@@ -1,34 +1,40 @@
 @import 'styles/variaveis';
 
-.datas{
-    background-color:$corBackground1;
+.datas {
+    background-color: $corBackground1;
     width: 99.8vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-family: $fontePadrao;
     font-size: 32px;
     text-align: justify;
+
     h1 {
         font-size: $h1;
     }
+
     ul {
         list-style: none;
     }
 }
+
 @media screen and (max-width: 900px) {
     .datas {
         font-size: 25px;
         padding: 5rem 2rem 1rem 1rem;
         justify-content: flex-start;
+        height: 100vh;
+
         h1 {
             font-size: $h1Responsivo;
         }
+
         ul {
-            li{
+            li {
                 line-height: 50px;
             }
         }

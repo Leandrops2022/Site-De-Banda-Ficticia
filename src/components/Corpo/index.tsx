@@ -1,27 +1,29 @@
 import style from './Corpo.module.scss';
-import {Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { mudarAtivado } from 'store/reducers/ativado';
+import { IAtivado } from 'interfaces/IAtivado';
 
-interface Props {
-  setAtivado?: React.Dispatch<React.SetStateAction<boolean>> | undefined
-  }
 
-export default function Corpo({ setAtivado }: Props) {
+export default function Corpo() {
+  const dispatch = useDispatch();
+
+  const ativado = useSelector((state: IAtivado) => state.ativado.estado);
+
   function fechaMenuEmScrollEvent() {
-    if(setAtivado){
-      setAtivado(false);
-    }
+    if (ativado) dispatch(mudarAtivado());
   }
+
   return (
     <div className={style.principal}>
       <div className={style.container}>
-        <div className={style.content_wrapper} onTouchMove={fechaMenuEmScrollEvent}>
+        <div
+          className={style.content_wrapper}
+          onTouchMove={(fechaMenuEmScrollEvent)}
+          onClick={(fechaMenuEmScrollEvent)}
+        >
           <Outlet />
         </div>
-        <footer className={style.rodape}>
-          <p className={style.textoCentro}> 2023, desenvolvido por Leandro Soares<br />
-            <span>Ashes of Lorem é o nome de uma banda ficticia e qualquer semelhança com nomes de bandas reais é pura coincidência</span>
-          </p>
-        </footer>
       </div>
     </div>
   );
